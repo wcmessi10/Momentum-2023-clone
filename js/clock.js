@@ -1,5 +1,4 @@
-const clock = document.querySelector("h2#clock");
-clock.innerText ="lalalalla";
+const clock = document.querySelector("span#clock");
 
 function sayClock(){
     const date = new Date();

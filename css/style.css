@@ -1,3 +1,62 @@
 .hidden{
     display: none;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+}
+.background-opacity{
+    opacity: 0.4;
+}
+img {
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:70%;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 170px;
+}
+.login-form{
+    margin-bottom: 50px;
+}
+.login-form input[type="text"]{
+    border:none;
+    border-bottom: 2px black solid;
+    background: transparent;
+}
+#clock{
+    display: flex;
+    color: black;
+    font-weight: 600;
+    font-size: 100px;
+}
+#quotes{
+    font-size: 16px;
+}
+#quotes span{
+    display: block;
+}
+#quotes span:last-child{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+#weather span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+#weather span:last-child{
+    color: tomato;
+    font-style: oblique;
+}
