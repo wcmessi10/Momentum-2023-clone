@@ -33,16 +33,21 @@ function deleteToDo(event){
 }
 function handleToDoSubmit(event){
     event.preventDefault();
-    const newTodo=toDoInput.value;
-    toDoInput.value="";
-    const toDoObject = {
-        text : newTodo,
-        id : Date.now()
-        //id를 고유값 주기위해 지금 시간을 나타내는 Date.now()를 준다.
-    };
-    toDos.push(toDoObject);
-    paintToDo(toDoObject);
-    saveToDos();
+    if(localStorage.getItem("username")===null){
+        alert("Write your username");
+    }else{
+        const newTodo=toDoInput.value;
+        toDoInput.value="";
+        const toDoObject = {
+            text : newTodo,
+            id : Date.now()
+            //id를 고유값 주기위해 지금 시간을 나타내는 Date.now()를 준다.
+        };
+        toDos.push(toDoObject);
+        paintToDo(toDoObject);
+        saveToDos();   
+    }
+    
 }
 
 toDoForm.addEventListener("submit",handleToDoSubmit);

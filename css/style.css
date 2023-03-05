@@ -20,6 +20,11 @@ img {
     z-index: -1;
     opacity:70%;
 }
+input::placeholder{
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
 .item{
     display: flex;
     flex-direction: column;
@@ -29,17 +34,33 @@ img {
 }
 .login-form{
     margin-bottom: 50px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 .login-form input[type="text"]{
     border:none;
     border-bottom: 2px black solid;
     background: transparent;
 }
+#greeting{
+    position: absolute;
+    left: 20px;
+    top:20px;
+    color: blueviolet;
+    opacity: 0.7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 #clock{
     display: flex;
     color: black;
     font-weight: 600;
     font-size: 100px;
+}
+#todo-form input{
+    border: none;
+    border-bottom: 2px black solid;
+    background: transparent;
 }
 #quotes{
     font-size: 16px;
