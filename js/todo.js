@@ -15,7 +15,7 @@ function paintToDo(newTodo){//newTodo는 id와 text가 있다
     //li의 아이디값을 object 아이디값을 넣어준다
     const span = document.createElement("span");
     const button = document.createElement("button");
-    button.innerText = "×";
+    button.innerText = " X";
     button.addEventListener("click",deleteToDo);
     li.appendChild(span);//li안에 자식으로 span추가
     li.appendChild(button);
